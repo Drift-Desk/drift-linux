@@ -1,10 +1,10 @@
 #!/bin/bash
 
 x=$(pwd)
-echo "Building Project : $x"
+echo "Compiling Project : $x"
 
 sudo cp -R app/src/ app/build/main/
 
-echo "Building complete"
+echo "Compilation complete"
 
-"$x"/app/build/App-Debug
+"$x"/app/build/App-Debug >> "$x"/builder.log
